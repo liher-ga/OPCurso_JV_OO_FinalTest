@@ -1,11 +1,15 @@
 package hotel.gestion;
 
 import java.time.LocalDate;
+import java.util.Arrays;
+
 import hotel.habitaciones.*;
 import hotel.personas.*;
 
 public class Reserva {
 	
+	
+
 	private LocalDate fechaInicio;
 	private int numeroDias;
 	private Cliente cliente;
@@ -62,7 +66,11 @@ public class Reserva {
 	}
 	
 	
-	
+	@Override
+	public String toString() {
+		return "Reserva [fechaInicio=" + fechaInicio + ", numeroDias=" + numeroDias + ", cliente=" + cliente
+				+ ", huespedes=" + Arrays.toString(huespedes) + ", habitacion=" + habitacion + "]";
+	}
 	
 	
 

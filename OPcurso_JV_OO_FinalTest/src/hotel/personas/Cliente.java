@@ -4,6 +4,8 @@ public class Cliente extends Huesped{
 	
 	
 
+	
+
 	private String tarjetaCredito;
 	
 	public Cliente(String nombre, String dni, int edad,String tarjetaCredito) {
@@ -19,6 +21,9 @@ public class Cliente extends Huesped{
 		this.tarjetaCredito = tarjetaCredito;
 	}
 	
-	
+	@Override
+	public String toString() {
+		return "Cliente [nombre=" + super.nombre + ", dni=" + super.dni + ", edad=" + super.edad + ", tarjetaCredito =" + tarjetaCredito + "]";
+	}
 
 }
